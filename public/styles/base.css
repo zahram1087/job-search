@@ -1,0 +1,26 @@
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300i,400,600");
+
+
+body {
+  background-color: rgba(247, 197, 90, 0.37);
+  margin: 0 auto;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5vw;
+  font-family: 'Mali';
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  font-family: 'Exo 2';
+}
+
+a {
+  text-decoration: none;
+}
