@@ -1,11 +1,52 @@
-<ul >
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Results</title>
+  <link rel="stylesheet" type="text/css" href="/styles/base.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/module.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/layout.css" />
+</head>
+<body>
+  
+    <div class="result-container">
 
-  <% arrayOfInfo.forEach(item => { %>
-    <li><%= item.title %></li>
-    <li><%= item.type %></li>
-    <li><%= item.created %></li>
-    <li><%= item.description %></li>
-    <li><%= item.company %></li>
+        <div class="result-header">
+            <h1 class="result-h1"> Search Result</h1>
+          </div>
+        <div class = "results-show">
+        <ul >
+        
+          <% arrayOfInfo.forEach(item => { %>
+            <h2> Job title : <%= item.title %></h2>
+            <h3> Type of job : <%= item.type %></h3>
+            <p> Job posting created on : <%= item.created %></p>
+            <p> Job description : <%= item.description %></p>
+            <p>Hiring company : <%= item.company %></p>
+            <p>Minimum salary : <%= item.salary_min %></p>
+            <p>Link to apply :<p><a href="<%= item.apply %>"><%= item.apply %></a></p></p>
+        
+            <% }) %>
+        </ul>
+        </div>
+        
+        <div class="result-footer">
+            <p>CopyRight2018</p>
+          </div>
+        
 
-    <% }) %>
-</ul>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+</div>

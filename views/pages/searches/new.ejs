@@ -5,38 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="/styles/base.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/module.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/layout.css" />
 </head>
 <body>
   
   <div class = "b"><h4>FIND A JOB</h4></div> 
   <div class = "c"> 
-      <form action="/searches" method="post">
-       <input id="search" type="text" name="searches" placeholder="Enter a title" required="required">
-       
-       <input id="search" type="text" name="searchez" placeholder="Enter a Description" required ="required">
-       
-       <button type="submit">Submit</button> 
-       <!-- <fieldset>
-           <label for="title">
-               <span>Title</span>
-               <input type="radio" name="search0" value="title" required>
-           </label> 
-       </fieldset>
-       <fieldset>
-           <label for="description">
-               <span>Description</span>
-               <input type="radio" name="search1" value="description" required>
-           </label>
-       </fieldset> -->
-       <!-- <fieldset>
-        <label for="location">
-            <span>Author</span>
-            <input type="submit" name="search" value="location" required>
-        </label>
-    </fieldset> -->
+      <form action="/searches/results" method="post">
+        <fieldset>
+            <legend>Job Search Form</legend>
+            <label for="storeLocation"> Job Title :</label>
+            <input id="search" type="text" name="searches" size="20" placeholder="Enter a title" required="required">
 
-       <!-- <button type="submit">Submit</button>   -->
-   </form>
+            <label for="storeLocation"> Job Description :</label>
+            <input id="search" type="text" name="searchez" size="20" placeholder="Enter a Description" required ="required">
+       
+            <button type="submit">Submit</button> 
+        </fieldset>
+    </form>
+   
   
 </body>
 </html>
