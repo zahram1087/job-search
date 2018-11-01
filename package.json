@@ -1,0 +1,28 @@
+{
+  "name": "job-search",
+  "version": "1.0.0",
+  "description": "This is a full-stack application that lets a user search the adzuna API for jobs based on the search query they input They then make a selection from a list of jobs that those search queries pertain to.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zahram1087/job-search.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zahram1087/job-search/issues"
+  },
+  "homepage": "https://github.com/zahram1087/job-search#readme",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "pg": "^7.6.0",
+    "superagent": "^4.0.0-beta.5"
+  }
+}
