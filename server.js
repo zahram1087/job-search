@@ -44,14 +44,15 @@ function handleError(err, response) {
 
 //constructor 
 const regex = /(<([^>]+)>)/ig;
-// const regexd = /(...(...[^]))
+// const regexd = /(...([^...]+)...)/ig;
 
 function Jobs(response) {
   this.type = response.category.label || 'Not available';
   this.created = response.created || 'No date of creaton available for this job post';
   this.company = response.company.display_name || 'No Company name available';
-  this.title = response.title.replace(regex,'')|| 'No title available';
-  this.description = response.description.replace(regex,'')|| 'No description available';
+  this.title = response.title.replace(regex,'') || 'No title available';
+  this.description = response.description.replace(regex,'') || 'No description available';
+  this.contract_time=response.contract_time || 'No contract time available';
   this.salary_min = response.salary_min || 'No minimum salary availalbe';
   this.apply = response.redirect_url || 'No job link available';
 

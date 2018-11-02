@@ -25,8 +25,10 @@
             <p> Job posting created on : <%= item.created %></p>
             <p> Job description : <%= item.description %></p>
             <p>Hiring company : <%= item.company %></p>
+            <p>Employment type : <%= item.contract_time %></p>
             <p>Minimum salary : <%= item.salary_min %></p>
             <p>Link to apply :<p><a href="<%= item.apply %>"><%= item.apply %></a></p></p>
+            <!-- <button type="submit" value="<%= item.apply %>" class="recipe-button">Select This Job</button> -->
         
             <% }) %>
         </ul>
